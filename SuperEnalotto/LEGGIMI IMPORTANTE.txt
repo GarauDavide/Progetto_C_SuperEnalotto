@@ -1,0 +1,24 @@
+* La struttura dei file del server deve rimanere cosi come si trova ora.
+Le cartelle Utenti, Vincite, Logs e Estrazioni non devono essere toccate.
+Di conseguenza nemmeno i relativi file al suo interno.
+
+* Possono essere cancellati solo file degli utenti all'interno delle cartelle
+	Utente e Vincite.
+Tutto il resto deve rimanere com'è.
+
+* Il file "every_user_list.txt" contiene tutti gli utente iscritti.
+Per cancellare un utente definitivamente bisogna modificare il file stesso.
+Bisogna farlo a mano in quanto la funzione non era prevista dal progetto.
+
+* PER ELIMINARE UN UTENTE BISOGNA CANCELLARE I RELATIVI FILE:
+	-> file nella cartella Utenti
+	-> file nella cartella Vincite
+	-> nome all'interno del file every_user_list.txt, mantenendo la formattazione corrente
+			un nome in ogni riga
+
+* IL FILE sockForked (se presente) DEVE ESSERE CANCELLATO PER POTER COMPRIMERE, MODIFICARE LA POSIZIONE DELLA CARTELLA INTERA DEL PROGETTO
+
+* Il tempo di BAN è settato per 60 secondi
+Per poterlo cambiare andare nel file:
+	-> condivision_data.h
+		cercare la variabile "#define BAN_TIME_SECONDS" e cambiarne il valore (secondi)
